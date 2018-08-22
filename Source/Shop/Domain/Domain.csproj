@@ -9,4 +9,8 @@
     <ProjectReference Include="..\Concepts\Concepts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dolittle.SDK.Commands" Version="2.0.0-alpha2*" />
+  </ItemGroup>
+
 </Project>
