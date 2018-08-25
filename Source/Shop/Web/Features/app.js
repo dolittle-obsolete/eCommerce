@@ -9,7 +9,7 @@ export class app {
     configureRouter(config, router) {
         config.options.pushState = true;
         config.map([
-            { route: ['', 'welcome'], name: 'welcome', moduleId: PLATFORM.moduleName('welcome'), layoutView: PLATFORM.moduleName('layout_fullscreen.html') }
+            { route: ['', 'catalog'], name: 'catalog', moduleId: PLATFORM.moduleName('./Catalog/Listing/index'), layoutView: PLATFORM.moduleName('layout_fullscreen.html') }
         ]);
 
         this.router = router;

@@ -13,6 +13,7 @@ export class Product extends ReadModel
            generation: '1'
         };
         this.article = '';
+        this.description = '';
         this.stock = 0;
         this.price = 0;
     }
