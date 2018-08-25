@@ -1,10 +1,13 @@
 {
     "eventHorizons": [
         {
-            "application": "",
+            "application": "0d577eb8-a70b-4e38-aca8-f85b3166bdc2",
             "boundedContext": "f660966d-3a74-44e6-8268-a9aefbae6115",
             "url": "localhost:50052",
-            "events": []
+            "events": [
+                { "id": "ae6e7f74-7991-46bd-881b-941c6d87fbb8", "generation": 1}
+
+            ]
         }
     ]
 }
