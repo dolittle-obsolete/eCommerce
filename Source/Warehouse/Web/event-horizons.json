@@ -1,0 +1,10 @@
+{
+    "eventHorizons": [
+        {
+            "application": "",
+            "boundedContext": "f660966d-3a74-44e6-8268-a9aefbae6115",
+            "url": "localhost:50052",
+            "events": []
+        }
+    ]
+}

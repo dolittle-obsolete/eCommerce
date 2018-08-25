@@ -1,0 +1,25 @@
+@import '../styles/Settings/all.scss';
+@import '../styles/Tools/all.scss';
+
+.welcome {
+    .splash-header {
+        background-image: url('../assets/splash.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; // background-blend-mode: multiply;
+        padding: $grid-gutter * 3 $grid-gutter $grid-gutter * 8;
+
+        .content {
+            padding: $grid-gutter;
+            background-color: rgba(51, 185, 230, 0.95);
+            border-radius: 0.1875rem;
+            color: #fff;
+            a {
+                color: inherit;
+            }
+            @include media-bp-min(tablet) {
+                width: 50%;
+            }
+        }
+    }
+}
