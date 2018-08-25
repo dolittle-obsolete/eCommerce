@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "80f5e1a2-a2bc-4403-b7ec-8bd90920cf2a": {
+      "commands": [
+        {
+          "artifact": "8f75772f-6282-4854-86aa-4cbcbf47867a",
+          "generation": 1,
+          "type": "Domain.Carts.Shopping.AddItemToCart, Domain"
+        }
+      ],
+      "events": [
+        {
+          "artifact": "ae6e7f74-7991-46bd-881b-941c6d87fbb8",
+          "generation": 1,
+          "type": "Events.Carts.Shopping.ItemAddedToCart, Events"
+        }
+      ],
+      "eventProcessors": [],
+      "eventSources": [
+        {
+          "artifact": "b25d8657-dffe-40e6-ba45-71dbfe09d98f",
+          "generation": 1,
+          "type": "Domain.Carts.Shopping.Cart, Domain"
+        }
+      ],
+      "readModels": [],
+      "queries": []
+    },
+    "728459c2-fab1-40c1-9ead-7122a1a890ea": {
+      "commands": [],
+      "events": [
+        {
+          "artifact": "64808183-4bf1-4b87-8144-84f85da5676f",
+          "generation": 1,
+          "type": "Events.Warehouse.SomeModule.SomeFeature.StockChanged, Events.Warehouse"
+        }
+      ],
+      "eventProcessors": [],
+      "eventSources": [],
+      "readModels": [],
+      "queries": []
+    },
+    "05b89f06-19c3-4502-b349-873ef7761a21": {
+      "commands": [],
+      "events": [],
+      "eventProcessors": [],
+      "eventSources": [],
+      "readModels": [
+        {
+          "artifact": "a3041218-0d14-4fae-a349-32d791c6149b",
+          "generation": 1,
+          "type": "Read.Catalog.Listing.Product, Read"
+        }
+      ],
+      "queries": [
+        {
+          "artifact": "46ee11e1-041c-4fab-92fd-8a683a6d1696",
+          "generation": 1,
+          "type": "Read.Catalog.Listing.ListingByCategory, Read"
+        }
+      ]
+    }
+  }
+}

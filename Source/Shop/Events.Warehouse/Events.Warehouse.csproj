@@ -2,11 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dolittle.Artifacts" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.SDK.Events" Version="2.0.0-alpha2*" />
   </ItemGroup>
 

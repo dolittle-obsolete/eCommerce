@@ -1,0 +1,50 @@
+{
+  "application": "0d577eb8-a70b-4e38-aca8-f85b3166bdc2",
+  "boundedContext": "f660966d-3a74-44e6-8268-a9aefbae6115",
+  "boundedContextName": "Shop",
+  "useModules": true,
+  "proxiesBasePath": "Features",
+  "namespaceSegmentsToStrip": {
+    "Events": [
+      "Warehouse"
+    ]
+  },
+  "topology": {
+    "modules": [
+      {
+        "module": "8d5a724b-84eb-4085-a766-8d28e681743e",
+        "name": "Carts",
+        "features": [
+          {
+            "feature": "80f5e1a2-a2bc-4403-b7ec-8bd90920cf2a",
+            "name": "Shopping",
+            "subFeatures": []
+          }
+        ]
+      },
+      {
+        "module": "c020195d-5675-4c17-9cc5-1a7539ce4680",
+        "name": "SomeModule",
+        "features": [
+          {
+            "feature": "728459c2-fab1-40c1-9ead-7122a1a890ea",
+            "name": "SomeFeature",
+            "subFeatures": []
+          }
+        ]
+      },
+      {
+        "module": "9291da5e-a5ad-4dc7-9037-5c97fad04046",
+        "name": "Catalog",
+        "features": [
+          {
+            "feature": "05b89f06-19c3-4502-b349-873ef7761a21",
+            "name": "Listing",
+            "subFeatures": []
+          }
+        ]
+      }
+    ],
+    "features": []
+  }
+}

@@ -4,6 +4,7 @@ using Dolittle.DependencyInversion.Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Web
@@ -11,22 +12,26 @@ namespace Web
     public partial class Startup
     {
         readonly IHostingEnvironment _hostingEnvironment;
+        readonly ILoggerFactory _loggerFactory;
         BootResult _bootResult;
+        
 
-        public Startup(IHostingEnvironment hostingEnvironment)
+        public Startup(IHostingEnvironment hostingEnvironment, ILoggerFactory loggerFactory)
         {
             _hostingEnvironment = hostingEnvironment;
+            _loggerFactory = loggerFactory;
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //while(!System.Diagnostics.Debugger.IsAttached) System.Threading.Thread.Sleep(10);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
             services.AddMvc();
 
-            _bootResult = services.AddDolittle();
+            _bootResult = services.AddDolittle(_loggerFactory);
         }
 
 
