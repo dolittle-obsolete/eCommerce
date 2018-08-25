@@ -7,8 +7,14 @@ using FluentValidation;
 
 namespace Domain.Carts.Shopping
 {
+    /// <summary>
+    /// Represents the input validation for <see cref="AddItemToCart"/>
+    /// </summary>
     public class AddItemToCartInputValidation : CommandInputValidatorFor<AddItemToCart>
     {
+        /// <summary>
+        /// Initializes a new instsance of <see cref="AddItemToCartInputValidation"/>
+        /// </summary>
         public AddItemToCartInputValidation()
         {
             RuleFor(_ => _.Article.Value)
