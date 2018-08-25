@@ -1,5 +1,18 @@
 {
   "artifacts": {
-
+    "7e0a1375-9e98-4dcf-b3fb-c05b194094e6": {
+      "commands": [],
+      "events": [
+        {
+          "artifact": "ae6e7f74-7991-46bd-881b-941c6d87fbb8",
+          "generation": 1,
+          "type": "Events.Shop.Carts.Shopping.ItemAddedToCart, Events.Shop"
+        }
+      ],
+      "eventProcessors": [],
+      "eventSources": [],
+      "readModels": [],
+      "queries": []
+    }
   }
 }
