@@ -10,6 +10,19 @@
     ]
   },
   "topology": {
-
+    "modules": [
+      {
+        "module": "4904bedc-90c5-4565-91ab-0ad36b31aae3",
+        "name": "Carts",
+        "features": [
+          {
+            "feature": "7e0a1375-9e98-4dcf-b3fb-c05b194094e6",
+            "name": "Shopping",
+            "subFeatures": []
+          }
+        ]
+      }
+    ],
+    "features": []
   }
 }
