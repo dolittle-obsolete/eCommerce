@@ -51,12 +51,13 @@
     <PackageReference Include="Dolittle.Runtime.ReadModels" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.Runtime.Queries" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.Runtime.Queries.Coordination" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Execution" Version="2.0.0-alpha2.1000" />
-    <PackageReference Include="Dolittle.Runtime.Server" Version="2.0.0-alpha2.1000" />
-    <PackageReference Include="Dolittle.Runtime.Tenancy" Version="2.0.0-alpha2.1000" />
+    <PackageReference Include="Dolittle.Runtime.Execution" Version="2.0.0-alpha2*" />
+    <PackageReference Include="Dolittle.Runtime.Server" Version="2.0.0-alpha2*" />
+    <PackageReference Include="Dolittle.Runtime.Tenancy" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
 
+    <PackageReference Include="Autofac" Version="4.6.2" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.0.0" />
 
