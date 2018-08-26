@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Web", "..\Common\Infrastructure.Web\Infrastructure.Web.csproj", "{20C8BBDD-2231-4C4C-818B-C55A0A12722E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Warehouse", "Events.Warehouse\Events.Warehouse.csproj", "{AB408CD8-310E-4491-A861-A889A528FFD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Shop", "Events.Shop\Events.Shop.csproj", "{AB408CD8-310E-4491-A861-A889A528FFD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
