@@ -109,6 +109,13 @@ $ cd Source/{bounded context}/Web
 $ dotnet run
 ```
 
+## Visual Studio 2017
+
+![](Images/set_startup_project.gif)
+
+![](Images/start_without_debugging.gif)
+
+
 ## .dolittle Folder
 
 There is a folder inside each `Web` folder called `.dolittle`. The purpose of this is to hold Dolittle configuration
@@ -122,7 +129,7 @@ in one place. In it you'll find the following files with the following purpose:
 | event-horizons.json | Describes which other event horizons this singularity (bounded context) is going to connect to, if any. |
 
 The files themselves are either fully generated or partly generated. The thing they have in common is that they represent metadata of the bounded context for it to be able to run. Things like event horizon and server settings are things that you typically want to take more control over before putting it into a runtime environment and not something governed in source. You might have build tasks that deals with this properly, or a runtime environment that enables you to pre-configure things - like a init container on Kubernetes or similar.
-In the Dolittle Cloud offering, this is dealt with. 
+In the Dolittle Cloud offering, this is dealt with.
 
 ### event-horizons.json
 
@@ -200,7 +207,7 @@ Every bounded context has the same basic structure in the form of isolated proje
 ...
 ```
 
-## 
+
 
 ## Application
 
