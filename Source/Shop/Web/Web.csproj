@@ -35,7 +35,7 @@
     
     <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*" />
-    <PackageReference Include="DolittleArtifactsBuild" Version="2.0.0-alpha2.1000" />
+    <PackageReference Include="DolittleArtifactsBuild" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
     
