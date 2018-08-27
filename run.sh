@@ -1,2 +1,2 @@
 #!/bin/bash
-cd Source/Shop/Web ; dotnet run & cd ../../Warehouse/Web ; dotnet run & cd ../../..
+cd Source/Shop/Web ; ./run.js & cd ../../Warehouse/Web ; ./run.js & cd ../../..

@@ -58,7 +58,7 @@ For every bounded context, simply go and do the following:
 $ npm install
 ```
 
-or if you have [Yarn](https://www.npmjs.com/package/yarn) installed, you can simply do:
+...or if you have [Yarn](https://www.npmjs.com/package/yarn) installed, you can simply do:
 
 ```shell
 $ yarn
@@ -77,6 +77,8 @@ $ ./install.sh
 ```shell
 c:\> install.cmd
 ```
+
+This should then install all the packages and run `dotnet restore` for the projects as well.
 
 There are multiple bounded contexts, as described later, that can be both run individually or together.
 By default, both bounded contexts are configured to assume that the other is running.
@@ -107,10 +109,17 @@ $ cd Source/{bounded context}/Web
 $ dotnet run
 ```
 
+## .dolittle Folder
+
+There is a folder inside each `Web` folder called `.dolittle`. The purpose of this is to hold Dolittle configuration
+in one place. 
+
+### event-horizons.json
+
+One of the files in the `.dolittle` folder is one called `event-horizons.json`.
 The event horizon system will by default connect them together and be relentless about getting a connection.
-If you want to work purely on one bounded context at a time, you can either edit the `event-horizons.json` file
-located in the `.dolittle` folder of the `Web` folder for each bounded context and just remove any bounded contexts
-its connecting to.
+If you want to work purely on one bounded context at a time, you can either edit the file and remove any
+event horizon to connect to.
 
 For instance, take this:
 
@@ -127,7 +136,7 @@ For instance, take this:
 }
 ```
 
-And turn it into this:
+And remove any content of the `eventHorizons` array:
 
 ```json
 {
@@ -156,20 +165,9 @@ Every bounded context has the same basic structure in the form of isolated proje
 | ------- | ----------- |
 | Concepts | Contains everything related to domain concepts, typically encapsulated value types and actual value objects |
 | Domain | Contains the representation of commands, validation, business rules and aggregate roots / event sources |
-| Events | Contains all the events in a bounded context - 
-
-### Concepts
-
-This is where you keep 
-
-### Domain
-
-### Events
-
-### Read
-
-### Web
-
+| Events | Contains all the events in a bounded context |
+| Read | Contains all the read models, queries and any event processors |
+| Web | Main entry-point of the application |
 
 ## Structure
 
