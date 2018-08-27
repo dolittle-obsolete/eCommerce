@@ -18,6 +18,7 @@
     },
     "Web": {
       "commandName": "Project",
+      "workingDirectory": ".",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",

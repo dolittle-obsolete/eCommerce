@@ -12,16 +12,17 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HTTPS_PORT": "44355"
+        "ASPNETCORE_HTTPS_PORT": "44355",
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "Web": {
       "commandName": "Project",
+      "workingDirectory": ".",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_URLS": "http://localhost:5000"
+        "ASPNETCORE_URLS": "http://localhost:5000",
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
