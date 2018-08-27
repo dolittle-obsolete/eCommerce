@@ -112,7 +112,17 @@ $ dotnet run
 ## .dolittle Folder
 
 There is a folder inside each `Web` folder called `.dolittle`. The purpose of this is to hold Dolittle configuration
-in one place. 
+in one place. In it you'll find the following files with the following purpose:
+
+| File | Purpose |
+| ---- | ------- |
+| bounded-context.json | Contains configuration that is representing your bounded context, such as name and unique identifier and which application it belongs to. Topology section of this file is generated and you should not manually edit this. |
+| artifacts.json | When you're building, unique representations - non CLR type specific - are discovered and put in this file. Do not delete this file, as this is how Dolittle keeps track of unique types. |
+| server.json | Dolittle runtime exposes an **interaction** endpoint and a **management** endpoint, these are defined here. Without this file, it will use default settings. |
+| event-horizons.json | Describes which other event horizons this singularity (bounded context) is going to connect to, if any. |
+
+The files themselves are either fully generated or partly generated. The thing they have in common is that they represent metadata of the bounded context for it to be able to run. Things like event horizon and server settings are things that you typically want to take more control over before putting it into a runtime environment and not something governed in source. You might have build tasks that deals with this properly, or a runtime environment that enables you to pre-configure things - like a init container on Kubernetes or similar.
+In the Dolittle Cloud offering, this is dealt with. 
 
 ### event-horizons.json
 
