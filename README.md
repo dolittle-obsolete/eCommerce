@@ -26,7 +26,7 @@ instance for this. Its also assuming the default port of `27017` to connect to.
 To run MongoDB as a docker image, just do:
 
 ```shell
-$ docker run mongo -p 27017:27017
+$ docker run -p 27017:27017 mongo
 ```
 
 This will give you a stateless MongoDB instance - meaning that it won't keep state around between restarts.
