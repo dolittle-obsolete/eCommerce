@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Concurrent;
 using Dolittle.DependencyInversion;
-using Dolittle.Execution;
+using Dolittle.Lifecycle;
 
 namespace Infrastructure.Web
 {

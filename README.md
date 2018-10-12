@@ -38,7 +38,7 @@ If you're running Windows, you can also run MongoDB using [Chocolatey](https://c
 c:\> choco install mongodb
 ```
 
-To run MongoDB on Windows after installing it with `Chocolatey` you need to create a data directory, the default is `c:\data\db'.
+To run MongoDB on Windows after installing it with `Chocolatey` you need to create a data directory, the default is `c:\data\db`.
 Once this is done you can simply run the MongoDB daemon, which should be located in `c:\Program Files\MongoDB\Server\X.X\bin\mongod.exe`,
 where X.X is the version e.g. **3.6**.
 

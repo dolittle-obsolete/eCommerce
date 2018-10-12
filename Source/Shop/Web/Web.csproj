@@ -22,45 +22,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concepts\Concepts.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
-    <ProjectReference Include="..\Events\Events.csproj" />
-    <ProjectReference Include="..\Events.Warehouse\Events.Warehouse.csproj" />
-    <ProjectReference Include="..\Read\Read.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
 
-    
     <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*" />
     <PackageReference Include="DolittleArtifactsBuild" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
-    
+
     <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />   
+    <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Dolittle.Concepts.Serialization.Json" Version="2.0.0-alpha2.*" />
 
-    <PackageReference Include="Dolittle.Runtime.Events" Version="2.0.0-alpha2*" />   
-    
-    <PackageReference Include="Dolittle.Runtime.Commands.Security" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Events" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.ReadModels" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Queries" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Queries.Coordination" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Execution" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Server" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Tenancy" Version="2.0.0-alpha2*" />
-
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
 
-    <PackageReference Include="Autofac" Version="4.6.2" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.0.0" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Concepts\Concepts.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Events\Events.csproj" />
+    <ProjectReference Include="..\Events.Warehouse\Events.Warehouse.csproj" />
+    <ProjectReference Include="..\Read\Read.csproj" />
   </ItemGroup>
 
 </Project>
