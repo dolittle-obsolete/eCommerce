@@ -38,6 +38,8 @@ namespace Web
             });
             builder.Bind(typeof(IReadModelRepositoryFor<>)).To(typeof(ReadModelRepositoryFor<>));
             builder.Bind<IEventProcessorOffsetRepository>().To<EventProcessorOffsetRepository>();
+            builder.Bind<ITenantOffsetRepository>().To<TenantOffsetRepository>();
+            
         }
     }
 }

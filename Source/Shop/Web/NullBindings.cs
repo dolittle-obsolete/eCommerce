@@ -9,6 +9,7 @@ using Dolittle.ReadModels.MongoDB;
 using MongoDB.Driver;
 using Dolittle.Runtime.Events.Processing.MongoDB;
 using Dolittle.Runtime.Events.Processing;
+using Dolittle.Runtime.Events.Relativity;
 
 namespace Web
 {
@@ -31,6 +32,7 @@ namespace Web
             });
             builder.Bind(typeof(IReadModelRepositoryFor<>)).To(typeof(ReadModelRepositoryFor<>));
             builder.Bind<IEventProcessorOffsetRepository>().To<EventProcessorOffsetRepository>();
+            builder.Bind<ITenantOffsetRepository>().To<TenantOffsetRepository>();
         }
     }
 }
