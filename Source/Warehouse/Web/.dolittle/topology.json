@@ -1,0 +1,22 @@
+{
+  "modules": [],
+  "features": [
+    {
+      "feature": "ee1cf13c-50c4-425d-a1fb-6b65f4f12ede",
+      "name": "Shop",
+      "subFeatures": [
+        {
+          "feature": "63b9d12a-9417-4b81-9faf-6e16f60b0259",
+          "name": "Carts",
+          "subFeatures": [
+            {
+              "feature": "6c1c6c0d-e819-4e4c-bb3b-d0cd14918c10",
+              "name": "Shopping",
+              "subFeatures": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

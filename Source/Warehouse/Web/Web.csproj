@@ -7,6 +7,23 @@
     <NoWarn>$(NoWarn);1591</NoWarn>
     <DefaultItemExcludes>gulp\**\*;node_modules\**\*;jspm_packages\**\*;bower_components\**\*;wwwroot\**\*;bin\**\*;obj\**\*</DefaultItemExcludes>
   </PropertyGroup>
+  
+   <PropertyGroup>
+    <!-- The relative path from this .csproj file to the bounded-context.json configuration file -->
+    <DolittleBoundedContextConfigPath>../bounded-context.json</DolittleBoundedContextConfigPath>
+    
+    <!-- Whether or not to use modules or not when genreating bounded context topology structure -->
+    <DolittleUseModules>False</DolittleUseModules>
+    
+    <!--  A | separated Key/Value pair map of namespace segments to strip -->
+    <DolittleNamespaceSegmentsToStrip></DolittleNamespaceSegmentsToStrip>
+    
+    <!-- Whether or not the build tool should generate proxies -->
+    <DolittleGenerateProxies>True</DolittleGenerateProxies>
+    
+    <!-- The relative path to put proxies if generated-->
+    <DolittleProxiesBasePath>Features</DolittleProxiesBasePath>
+  </PropertyGroup>
 
   <ItemGroup>
     <Content Remove="node_modules\**\*" />
@@ -30,35 +47,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
 
-    
-    <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*" />
-    <PackageReference Include="DolittleArtifactsBuild" Version="2.0.0-alpha2*" />   
+        <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*"/>
+        <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
+        <PackageReference Include="Dolittle.Build" Version="2.0.0-alpha2*" />
 
-    <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
-    
-    <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />   
+        <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="2.0.0-alpha2*" />
+        <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />
 
-    <PackageReference Include="Dolittle.Concepts.Serialization.Json" Version="2.0.0-alpha2.*" />
+        <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
 
-    <PackageReference Include="Dolittle.Runtime.Events" Version="2.0.0-alpha2*" />   
-    
-    <PackageReference Include="Dolittle.Runtime.Commands.Security" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Events" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.ReadModels" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Queries" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Queries.Coordination" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Execution" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Server" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Tenancy" Version="2.0.0-alpha2*" />
+        <PackageReference Include="Dolittle.Concepts.Serialization.Json" Version="2.0.0-alpha2.*" />
 
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
 
-    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.0.0" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="2.0.0" />
 
   </ItemGroup>
 

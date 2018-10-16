@@ -1,0 +1,8 @@
+{
+  "application": "802598cc-7c74-5d10-8c39-fab566c951fd",
+  "boundedContext": "915b1a57-7eca-4e64-88b4-6329accd86a0",
+  "boundedContextName": "Warehouse",
+  "backend": {
+    "language": "csharp"
+  }
+}

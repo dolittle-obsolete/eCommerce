@@ -1,6 +1,6 @@
 {
   "artifacts": {
-    "7e0a1375-9e98-4dcf-b3fb-c05b194094e6": {
+    "6c1c6c0d-e819-4e4c-bb3b-d0cd14918c10": {
       "commands": [],
       "events": [
         {
@@ -9,7 +9,6 @@
           "type": "Events.Shop.Carts.Shopping.ItemAddedToCart, Events.Shop"
         }
       ],
-      "eventProcessors": [],
       "eventSources": [],
       "readModels": [],
       "queries": []
