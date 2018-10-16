@@ -1,10 +1,10 @@
 {
   "artifacts": {
-    "6c1c6c0d-e819-4e4c-bb3b-d0cd14918c10": {
+    "656acc11-859d-475d-bfd5-b47005960bdf": {
       "commands": [],
       "events": [
         {
-          "artifact": "ae6e7f74-7991-46bd-881b-941c6d87fbb8",
+          "artifact": "f8d87831-58fe-4d47-8fc7-c0c1adaab39c",
           "generation": 1,
           "type": "Events.Shop.Carts.Shopping.ItemAddedToCart, Events.Shop"
         }

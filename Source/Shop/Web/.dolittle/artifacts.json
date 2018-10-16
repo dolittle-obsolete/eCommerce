@@ -1,24 +1,23 @@
 {
   "artifacts": {
-    "80f5e1a2-a2bc-4403-b7ec-8bd90920cf2a": {
+    "a1650964-af71-4e08-8fba-556b598961f7": {
       "commands": [
         {
-          "artifact": "8f75772f-6282-4854-86aa-4cbcbf47867a",
+          "artifact": "752e596f-f5a4-49d7-b0f9-702c61464e09",
           "generation": 1,
           "type": "Domain.Carts.Shopping.AddItemToCart, Domain"
         }
       ],
       "events": [
         {
-          "artifact": "ae6e7f74-7991-46bd-881b-941c6d87fbb8",
+          "artifact": "f8d87831-58fe-4d47-8fc7-c0c1adaab39c",
           "generation": 1,
           "type": "Events.Carts.Shopping.ItemAddedToCart, Events"
         }
       ],
-      "eventProcessors": [],
       "eventSources": [
         {
-          "artifact": "b25d8657-dffe-40e6-ba45-71dbfe09d98f",
+          "artifact": "885b00fc-acf6-4217-aa4a-5f0eccf651f0",
           "generation": 1,
           "type": "Domain.Carts.Shopping.Cart, Domain"
         }
@@ -26,7 +25,7 @@
       "readModels": [],
       "queries": []
     },
-    "728459c2-fab1-40c1-9ead-7122a1a890ea": {
+    "11a57596-a68b-40e2-b9b1-1b6fa89e46c5": {
       "commands": [],
       "events": [
         {
@@ -35,26 +34,24 @@
           "type": "Events.Warehouse.SomeModule.SomeFeature.StockChanged, Events.Warehouse"
         }
       ],
-      "eventProcessors": [],
       "eventSources": [],
       "readModels": [],
       "queries": []
     },
-    "05b89f06-19c3-4502-b349-873ef7761a21": {
+    "f3160eef-7699-487c-b4ac-8c1e2bb7e5dc": {
       "commands": [],
       "events": [],
-      "eventProcessors": [],
       "eventSources": [],
       "readModels": [
         {
-          "artifact": "a3041218-0d14-4fae-a349-32d791c6149b",
+          "artifact": "290a63d6-adc1-44b8-b697-c6feefa3ddaf",
           "generation": 1,
           "type": "Read.Catalog.Listing.Product, Read"
         }
       ],
       "queries": [
         {
-          "artifact": "46ee11e1-041c-4fab-92fd-8a683a6d1696",
+          "artifact": "9cf626a0-26c4-4ee6-a398-e27a71b6cdda",
           "generation": 1,
           "type": "Read.Catalog.Listing.ListingByCategory, Read"
         }

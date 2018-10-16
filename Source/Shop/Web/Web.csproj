@@ -8,6 +8,23 @@
     <DefaultItemExcludes>gulp\**\*;node_modules\**\*;jspm_packages\**\*;bower_components\**\*;wwwroot\**\*;bin\**\*;obj\**\*</DefaultItemExcludes>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <!-- The relative path from this .csproj file to the bounded-context.json configuration file -->
+    <DolittleBoundedContextConfigPath>../bounded-context.json</DolittleBoundedContextConfigPath>
+    
+    <!-- Whether or not to use modules or not when genreating bounded context topology structure -->
+    <DolittleUseModules>True</DolittleUseModules>
+    
+    <!--  A | separated Key/Value pair map of namespace segments to strip -->
+    <DolittleNamespaceSegmentsToStrip></DolittleNamespaceSegmentsToStrip>
+    
+    <!-- Whether or not the build tool should generate proxies -->
+    <DolittleGenerateProxies>True</DolittleGenerateProxies>
+    
+    <!-- The relative path to put proxies if generated-->
+    <DolittleProxiesBasePath>Features</DolittleProxiesBasePath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Remove="node_modules\**\*" />
     <Content Remove="jspm_packages\**\*" />
@@ -24,14 +41,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
 
+    <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*"/>
     <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*" />
-    <PackageReference Include="DolittleArtifactsBuild" Version="2.0.0-alpha2*" />
-
-    <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
+    <PackageReference Include="Dolittle.Build" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="2.0.0-alpha2*" />
     <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />
+
+    <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
 
     <PackageReference Include="Dolittle.Concepts.Serialization.Json" Version="2.0.0-alpha2.*" />
 

@@ -1,0 +1,44 @@
+{
+  "modules": [
+    {
+      "module": "16575d1c-78dc-4398-81ad-da30e783ca3c",
+      "name": "Carts",
+      "features": [
+        {
+          "feature": "a1650964-af71-4e08-8fba-556b598961f7",
+          "name": "Shopping",
+          "subFeatures": []
+        }
+      ]
+    },
+    {
+      "module": "3686c0e0-ec82-4284-964d-caef07b9a84d",
+      "name": "Warehouse",
+      "features": [
+        {
+          "feature": "1e66e9aa-f69d-4042-b345-1f37493bce8c",
+          "name": "SomeModule",
+          "subFeatures": [
+            {
+              "feature": "11a57596-a68b-40e2-b9b1-1b6fa89e46c5",
+              "name": "SomeFeature",
+              "subFeatures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": "239ce168-261b-4011-9d94-1d7537401d12",
+      "name": "Catalog",
+      "features": [
+        {
+          "feature": "f3160eef-7699-487c-b4ac-8c1e2bb7e5dc",
+          "name": "Listing",
+          "subFeatures": []
+        }
+      ]
+    }
+  ],
+  "features": []
+}

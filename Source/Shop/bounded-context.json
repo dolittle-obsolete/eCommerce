@@ -1,0 +1,8 @@
+{
+  "application": "802598cc-7c74-5d10-8c39-fab566c951fd",
+  "boundedContext": "f660966d-3a74-44e6-8268-a9aefbae6115",
+  "boundedContextName": "Shop",
+  "backend": {
+    "language": "csharp"
+  }
+}

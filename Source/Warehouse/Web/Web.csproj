@@ -6,6 +6,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <DefaultItemExcludes>gulp\**\*;node_modules\**\*;jspm_packages\**\*;bower_components\**\*;wwwroot\**\*;bin\**\*;obj\**\*</DefaultItemExcludes>
+
   </PropertyGroup>
   
    <PropertyGroup>
@@ -13,7 +14,7 @@
     <DolittleBoundedContextConfigPath>../bounded-context.json</DolittleBoundedContextConfigPath>
     
     <!-- Whether or not to use modules or not when genreating bounded context topology structure -->
-    <DolittleUseModules>False</DolittleUseModules>
+    <DolittleUseModules>True</DolittleUseModules>
     
     <!--  A | separated Key/Value pair map of namespace segments to strip -->
     <DolittleNamespaceSegmentsToStrip></DolittleNamespaceSegmentsToStrip>

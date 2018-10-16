@@ -1,16 +1,15 @@
 {
-  "modules": [],
-  "features": [
+  "modules": [
     {
-      "feature": "ee1cf13c-50c4-425d-a1fb-6b65f4f12ede",
+      "module": "0715b14f-57e6-4071-9800-57bc0062df43",
       "name": "Shop",
-      "subFeatures": [
+      "features": [
         {
-          "feature": "63b9d12a-9417-4b81-9faf-6e16f60b0259",
+          "feature": "5c6df3b6-dc30-441a-9ebf-26d29af207bf",
           "name": "Carts",
           "subFeatures": [
             {
-              "feature": "6c1c6c0d-e819-4e4c-bb3b-d0cd14918c10",
+              "feature": "656acc11-859d-475d-bfd5-b47005960bdf",
               "name": "Shopping",
               "subFeatures": []
             }
@@ -18,5 +17,6 @@
         }
       ]
     }
-  ]
+  ],
+  "features": []
 }

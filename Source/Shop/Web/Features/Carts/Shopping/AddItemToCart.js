@@ -8,7 +8,7 @@ export class AddItemToCart extends Command
 {
     constructor() {
         super();
-        this.type = '8f75772f-6282-4854-86aa-4cbcbf47867a';
+        this.type = '752e596f-f5a4-49d7-b0f9-702c61464e09';
 
         this.article = '';
         this.quantity = 0;
