@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "module": "910b0875-f2ab-412b-8926-bd5f110508f4",
+      "name": "Carts",
+      "features": [
+        {
+          "feature": "2e7e02ac-b1a1-4226-a272-238592e6c3e0",
+          "name": "Shopping",
+          "subFeatures": []
+        }
+      ]
+    }
+  ],
+  "features": []
+}

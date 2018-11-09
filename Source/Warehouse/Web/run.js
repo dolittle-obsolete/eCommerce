@@ -16,8 +16,8 @@ compiler.watch({
     aggregateTimeout: 300,
     poll: undefined
 }, (err, stats) => {
-    if( err || stats.hasErrors() ) {
-        console.log(err || stats.compilation.errors);
+    if( err || stats.hasErrors() ) {
+        console.log(err || stats.compilation.errors);
     } else {
         console.log("(web)Packed and all is good")
     }
@@ -27,13 +27,12 @@ compiler.watch({
 let karmaOptions = {
     configFile : path.resolve('./karma.conf.js')
 };
-
 let server = new karma.Server(karmaOptions).start()
 */
 
-glob("*.csproj", (err, matches) => {
+glob("../Core/*.csproj", (err, matches) => {
     if (matches.length) {
-        let dotnet = spawn("dotnet", ["watch","run"]);
+        let dotnet = spawn('dotnet', ['watch','run'], {cwd: '../Core'});
         dotnet.stdout.on('data', (data) => {
             console.log(data.toString());
         });
@@ -42,6 +41,6 @@ glob("*.csproj", (err, matches) => {
             console.log(data.toString());
         });
     } else {
-        console.log("<--- No .csproj file - not running 'dotnet' --->")
+        console.log('<--- No .csproj file - not running "dotnet" --->')
     }
 });

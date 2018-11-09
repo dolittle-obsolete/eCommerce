@@ -1,0 +1,11 @@
+{
+    "strategy": "hostname",
+    "fallbackToDeveloperTenant": true,
+    "configuration": {
+        "segments": "first"
+    },
+    "map": {
+       "TenantA": "720ab91f-23b7-44f2-bde2-0638214971ec",
+       "TenantB": "7269089b-8ebd-4516-a06e-7c95fc6b816b"
+    }
+ }
