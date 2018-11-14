@@ -11,5 +11,6 @@ export class ListingByCategory extends Query
         this.nameOfQuery = 'ListingByCategory';
         this.generatedFrom = 'Read.Catalog.Listing.ListingByCategory';
 
+        this.category = '';
     }
 }

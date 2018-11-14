@@ -12,6 +12,60 @@
       "eventSources": [],
       "readModels": [],
       "queries": []
+    },
+    "8928d391-a757-4e85-b5ed-25b8a1ba62ae": {
+      "commands": [
+        {
+          "artifact": "b532d92c-66fc-47a5-a670-64eb249b04f7",
+          "generation": 1,
+          "type": "Domain.Products.Store.AddItemToStore, Domain"
+        },
+        {
+          "artifact": "a44d5c3b-5133-49e9-8db1-42a393008af9",
+          "generation": 1,
+          "type": "Domain.Products.Store.RemoveItemFromStore, Domain"
+        }
+      ],
+      "events": [],
+      "eventSources": [
+        {
+          "artifact": "0ead09d0-2b77-4189-9643-f39b92f71f4f",
+          "generation": 1,
+          "type": "Domain.Products.Store.Store, Domain"
+        }
+      ],
+      "readModels": [
+        {
+          "artifact": "bb4dad6d-eba6-41d2-9de3-c7576b057e82",
+          "generation": 1,
+          "type": "Read.Products.Store.Product, Read"
+        }
+      ],
+      "queries": [
+        {
+          "artifact": "8aca7e41-9949-4405-beff-a2747da1aa54",
+          "generation": 1,
+          "type": "Read.Products.Store.AllProducts, Read"
+        }
+      ]
+    },
+    "557d24af-ae2b-4ad6-8b59-54e1a4fb9725": {
+      "commands": [],
+      "events": [
+        {
+          "artifact": "39869ca3-8793-4624-ac29-990b6c531f29",
+          "generation": 1,
+          "type": "Events.Catalog.Listing.ItemAddedToListing, Events"
+        },
+        {
+          "artifact": "ec6d6a42-971f-4acb-8255-0a6e87cc4e1f",
+          "generation": 1,
+          "type": "Events.Catalog.Listing.ItemRemovedFromListing, Events"
+        }
+      ],
+      "eventSources": [],
+      "readModels": [],
+      "queries": []
     }
   }
 }

@@ -14,6 +14,7 @@ namespace Events.Shop.Carts.Shopping
         {
             Article = article;
             Quantity = quantity;
+            
         }
 
         public string Article { get; }

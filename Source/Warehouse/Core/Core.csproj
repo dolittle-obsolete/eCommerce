@@ -47,7 +47,6 @@
     <ProjectReference Include="..\Events\Events.csproj" />
     <ProjectReference Include="..\Events.Shop\Events.Shop.csproj" />
     <ProjectReference Include="..\Read\Read.csproj" />
-    <ProjectReference Include="..\..\Common\Infrastructure.Web\Infrastructure.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

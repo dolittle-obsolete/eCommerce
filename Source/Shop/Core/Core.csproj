@@ -16,7 +16,7 @@
     <DolittleUseModules>True</DolittleUseModules>
     
     <!--  A | separated Key/Value pair map of namespace segments to strip -->
-    <DolittleNamespaceSegmentsToStrip></DolittleNamespaceSegmentsToStrip>
+    <DolittleNamespaceSegmentsToStrip>Events=Warehouse</DolittleNamespaceSegmentsToStrip>
     
     <!-- Whether or not the build tool should generate proxies -->
     <DolittleGenerateProxies>True</DolittleGenerateProxies>
@@ -45,8 +45,8 @@
     <ProjectReference Include="..\Concepts\Concepts.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Events\Events.csproj" />
+    <ProjectReference Include="..\Events.Warehouse\Events.Warehouse.csproj" />
     <ProjectReference Include="..\Read\Read.csproj" />
-    <ProjectReference Include="..\..\Common\Infrastructure.Web\Infrastructure.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

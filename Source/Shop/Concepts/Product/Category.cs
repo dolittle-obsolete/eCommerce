@@ -4,20 +4,20 @@
  *--------------------------------------------------------------------------------------------*/
 using Dolittle.Concepts;
 
-namespace Concepts
+namespace Concepts.Product
 {
     /// <summary>
-    /// Represents the domain concept of an article - a number that is often used to describe a product
+    /// Defines the domain concept of a product category
     /// </summary>
-    public class Article : ConceptAs<string>
+    public class Category : ConceptAs<string>
     {
         /// <summary>
-        /// Implicitly converts from a <see cref="string"/> to an <see cref="Article"/>
+        /// Implicitly convert from a <see cref="string"/> to a <see cref="Category"/>
         /// </summary>
-        /// <param name="article"><see cref="Article"/> instance</param>
-        public static implicit operator Article(string article)
+        /// <param name="category"><see cref="string"/> representation of a <see cref="Category"/></param>
+        public static implicit operator Category(string category)
         {
-            return new Article { Value = article };
+            return new Category { Value = category };
         }
     }   
 }
