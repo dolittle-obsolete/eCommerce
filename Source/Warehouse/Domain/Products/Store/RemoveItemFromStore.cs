@@ -6,7 +6,7 @@ namespace Domain.Products.Store
 {
     public class RemoveItemFromStore : ICommand
     {
-        public Guid ProductId {get; set;}
+        public Guid Id {get; set;}
         public Article Article { get; set;}
     }
 }

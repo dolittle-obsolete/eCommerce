@@ -22,21 +22,25 @@ export class index {
     }
 
     addItemToStore(product) {
+        console.log(product);
         let command = new AddItemToStore();
         command.article = product.article;
         command.category = product.category;
         command.description = product.description;
         command.price = product.price;
-        command.productId = product.productId;
+        command.id = product.id;
         command.stock = product.stock;
+        console.log(command);
+        console.log(command.id);
         this._commandCoordinator.handle(command).then(result => {
             console.log(result);
         });
     }
-    removeItemFromStore(article) {
+    removeItemFromStore(article, id) {
+        console.log(article, id);
         let command = new RemoveItemFromStore();
         command.article = article;
-        command.productId
+        command.id = id;
         this._commandCoordinator.handle(command).then(result => {
             console.log(result);
         });

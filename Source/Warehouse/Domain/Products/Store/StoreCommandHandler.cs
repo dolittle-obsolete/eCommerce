@@ -15,13 +15,13 @@ namespace Domain.Products.Store
 
         public void Handle(AddItemToStore cmd)
         {
-            var aggregate = _aggregateRootRepoForStore.Get(cmd.ProductId);
+            var aggregate = _aggregateRootRepoForStore.Get(cmd.Id);
             aggregate.AddItemToStore(cmd.Article, cmd.Description, cmd.Category, cmd.Stock, cmd.Price);
         }
         
         public void Handle(RemoveItemFromStore cmd)
         {
-            var aggregate = _aggregateRootRepoForStore.Get(cmd.ProductId);
+            var aggregate = _aggregateRootRepoForStore.Get(cmd.Id);
             aggregate.RemoveItemFromStore(cmd.Article);
         }
         
