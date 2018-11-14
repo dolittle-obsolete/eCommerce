@@ -1,0 +1,75 @@
+{
+  "artifacts": {
+    "5f5d7f29-5800-4f7b-93b4-84be65c8847e": {
+      "commands": [
+        {
+          "artifact": "a6fad40c-fb59-4dbe-88de-e807a8c3fea5",
+          "generation": 1,
+          "type": "Domain.Carts.Shopping.AddItemToCart, Domain"
+        },
+        {
+          "artifact": "be836b0d-2c9c-4b42-b990-16b1a886d29d",
+          "generation": 1,
+          "type": "Domain.Carts.Shopping.RemoveItemFromCart, Domain"
+        }
+      ],
+      "events": [
+        {
+          "artifact": "2bb07f6b-5206-4f5d-9c95-13e2f85cb52f",
+          "generation": 1,
+          "type": "Events.Carts.Shopping.ItemAddedToCart, Events"
+        },
+        {
+          "artifact": "d7fd336f-bcd6-4f66-9ade-bc9b1f785415",
+          "generation": 1,
+          "type": "Events.Carts.Shopping.ItemRemovedFromCart, Events"
+        }
+      ],
+      "eventSources": [
+        {
+          "artifact": "49971030-c89c-4b0f-b32f-b7526b71ac26",
+          "generation": 1,
+          "type": "Domain.Carts.Shopping.Cart, Domain"
+        }
+      ],
+      "readModels": [
+      ],
+      "queries": []
+    },
+    "d59814fd-99d5-493d-a9ee-53c738c0e1f6": {
+      "commands": [],
+      "events": [
+        {
+          "artifact": "39869ca3-8793-4624-ac29-990b6c531f29",
+          "generation": 1,
+          "type": "Events.Warehouse.Catalog.Listing.ItemAddedToListing, Events.Warehouse"
+        },
+        {
+          "artifact": "ec6d6a42-971f-4acb-8255-0a6e87cc4e1f",
+          "generation": 1,
+          "type": "Events.Warehouse.Catalog.Listing.ItemRemovedFromListing, Events.Warehouse"
+        }
+      ],
+      "eventSources": [],
+      "readModels": [
+        {
+          "artifact": "562e8765-a015-48a1-8d28-c65abbc3dac4",
+          "generation": 1,
+          "type": "Read.Catalog.Listing.Product, Read"
+        }
+      ],
+      "queries": [
+        {
+          "artifact": "4b14f924-4d43-4674-a1d4-2fcb809f257b",
+          "generation": 1,
+          "type": "Read.Catalog.Listing.ListingByCategory, Read"
+        },
+        {
+          "artifact": "6548baa6-6eda-4c47-b2cf-79930c259574",
+          "generation": 1,
+          "type": "Read.Catalog.Listing.AllListedProducts, Read"
+        }
+      ]
+    }
+  }
+}

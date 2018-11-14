@@ -1,0 +1,40 @@
+<template>
+    <require from="./index.scss"></require>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Art.No.
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Price
+                </th>
+                <th></th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr repeat.for="product of products">
+                <td>${product.article}</td>
+                <td>${product.description}</td>
+                <td>${product.category}</td>
+                <td>${product.price}</td>
+                <td>
+                    <button type="submit" class="primary" click.delegate="addItemToStore(product)">Add</button>
+                    <button type="submit" class="primary" click.delegate="removeItemFromStore(product.article, product.productId)">Remove</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    
+
+</template>

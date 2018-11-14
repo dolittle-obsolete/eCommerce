@@ -2,4 +2,4 @@
     "presets": [
       "./node_modules/dolittle.javascript.build/.babelrc.js"
     ]
-  }
+}
