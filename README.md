@@ -57,6 +57,7 @@ For every bounded context, simply go and do the following:
 ```shell
 $ npm install
 ```
+if you're experiencing trouble with npm install try using yarn instead.
 
 ...or if you have [Yarn](https://www.npmjs.com/package/yarn) installed, you can simply do:
 
@@ -105,31 +106,35 @@ This will run the bounded contexts as background executables. You can easily run
 tasks as well, for each bounded context in seperate terminal windows:
 
 ```shell
-$ cd Source/{bounded context}/Web
+$ cd Source/{bounded context}/Core
 $ dotnet run
 ```
 
+### Killing the processes
+You might need to kill the running processes at some point. In that case we have a kill_all_dot_net.sh script that kill all running dotnet processes.
+
 ## Visual Studio 2017
 
-![](Images/set_startup_project.gif)
-
-![](Images/start_without_debugging.gif)
-
+You have to configure the Core project as the startup project
 
 ## .dolittle Folder
 
-There is a folder inside each `Web` folder called `.dolittle`. The purpose of this is to hold Dolittle configuration
+There is a folder inside each `Core` folder called `.dolittle`. The purpose of this is to hold Dolittle configuration
 in one place. In it you'll find the following files with the following purpose:
 
 | File | Purpose |
 | ---- | ------- |
-| bounded-context.json | Contains configuration that is representing your bounded context, such as name and unique identifier and which application it belongs to. Topology section of this file is generated and you should not manually edit this. |
 | artifacts.json | When you're building, unique representations - non CLR type specific - are discovered and put in this file. Do not delete this file, as this is how Dolittle keeps track of unique types. |
+| event-horizons.json | Describes which other event horizons this singularity (bounded context) it's going to connect to, if any. |
+| resources.json | This is where we provide the actual configuration of the Read models and the Event store connections for the given tenants. |
 | server.json | Dolittle runtime exposes an **interaction** endpoint and a **management** endpoint, these are defined here. Without this file, it will use default settings. |
-| event-horizons.json | Describes which other event horizons this singularity (bounded context) is going to connect to, if any. |
-
+| tenant-map.json | A single json file called tenant-map.json is used to configure the Tenant Resolving System. |
+| tenants.json | A configuration setup with the tenants that you provide resource configurations for. When creating a bounded context through the [dolittle cli tool](https://dolittle.io/cli/) |
+| topology.json | Describes the meta-model of the bounded context. Its features and modules is defined here, and the artifacts defined in the artifacts.json file is hooked up to the feature ids that are present here in the topology configuration |
 The files themselves are either fully generated or partly generated. The thing they have in common is that they represent metadata of the bounded context for it to be able to run. Things like event horizon and server settings are things that you typically want to take more control over before putting it into a runtime environment and not something governed in source. You might have build tasks that deals with this properly, or a runtime environment that enables you to pre-configure things - like a init container on Kubernetes or similar.
 In the Dolittle Cloud offering, this is dealt with.
+
+Navigate to the [dolittle documentation page](https://dolittle.io/overview/) for further details
 
 ### event-horizons.json
 
@@ -180,11 +185,13 @@ Every bounded context has the same basic structure in the form of isolated proje
 
 | Project | Description |
 | ------- | ----------- |
+| Core | Contains the actual runnable core of a dolittle-based bounded context. It acts as the glue that holds the backend of the bounded context.  |
 | Concepts | Contains everything related to domain concepts, typically encapsulated value types and actual value objects |
 | Domain | Contains the representation of commands, validation, business rules and aggregate roots / event sources |
 | Events | Contains all the events in a bounded context |
+| Events.OtherBoundedContext | Contains all the events from other bounded contexts that we want to listen for |
 | Read | Contains all the read models, queries and any event processors |
-| Web | Main entry-point of the application |
+| Web | Contains the web interaction logic of the bounded context, the front end. We default this to Aurelia, but we're framework agnostic |
 
 ## Structure
 

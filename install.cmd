@@ -1,9 +1,9 @@
 @echo off
 cd Source\Shop\Web
-npm install
+yarn install
 cd ..\Core
 dotnet restore
 cd ..\..\Warehouse/Web
-npm install
+yarn install
 cd ..\Core
 dotnet restore
