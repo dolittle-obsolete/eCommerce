@@ -14,5 +14,13 @@
   },
   "core": {
     "language": "csharp"
-  }
+  },
+  "interaction": [
+    {
+      "type": "interaction",
+      "language": "javascript",
+      "framework": "aurelia",
+      "entryPoint": "Web"
+    }
+  ]
 }

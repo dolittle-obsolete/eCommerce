@@ -1,27 +1,23 @@
 {
-  "modules": [
-    {
-      "module": "c39576dd-918f-4cae-9bba-a7ad52fb081f",
+  "modules": {
+    "742052c4-5629-4903-a65b-72a4422d5e4c": {
       "name": "Carts",
-      "features": [
-        {
-          "feature": "5f5d7f29-5800-4f7b-93b4-84be65c8847e",
+      "features": {
+        "78a8724e-a0ae-4434-ae34-d9180d9fe118": {
           "name": "Shopping",
-          "subFeatures": []
+          "subFeatures": {}
         }
-      ]
+      }
     },
-    {
-      "module": "cd814ded-440e-4c77-9510-fce255191afe",
+    "a64c6de9-622b-44dd-897d-7ab052016b96": {
       "name": "Catalog",
-      "features": [
-        {
-          "feature": "d59814fd-99d5-493d-a9ee-53c738c0e1f6",
+      "features": {
+        "242c9453-b3f7-44d8-bf06-f13b9759b050": {
           "name": "Listing",
-          "subFeatures": []
+          "subFeatures": {}
         }
-      ]
+      }
     }
-  ],
-  "features": []
+  },
+  "features": {}
 }

@@ -8,7 +8,7 @@ export class RemoveItemFromCart extends Command
 {
     constructor() {
         super();
-        this.type = 'be836b0d-2c9c-4b42-b990-16b1a886d29d';
+        this.type = 'fb9b30e9-8fc9-4f5f-a96f-a8524347376a';
 
         this.article = '';
         this.quantity = 0;

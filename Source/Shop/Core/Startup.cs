@@ -1,5 +1,5 @@
 using Autofac;
-using Dolittle.Bootstrapping;
+using Dolittle.Booting;
 using Dolittle.DependencyInversion.Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
