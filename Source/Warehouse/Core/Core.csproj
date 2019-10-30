@@ -53,7 +53,7 @@
     <PackageReference Include="Dolittle.Resources.Configuration" Version="2.0.0-alpha2*" /> 
     
     <PackageReference Include="Dolittle.Tenancy.Configuration" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
 
     
     <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
