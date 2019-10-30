@@ -50,31 +50,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dolittle.Resources.Configuration" Version="2.0.0-alpha2*" /> 
-    
-    <PackageReference Include="Dolittle.Tenancy.Configuration" Version="2.0.0-alpha2*" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Dolittle.AspNetCore" Version="3.*" />
+    <PackageReference Include="Dolittle.AspNetCore.Debugging.Swagger" Version="1.*" />
 
-    
-    <PackageReference Include="Dolittle.AspNetCore" Version="2.0.0-alpha2*" />
-    
-    <PackageReference Include="Dolittle.AspNetCore.Execution" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.SDK" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Build" Version="2.0.0-alpha2*" />   
+    <PackageReference Include="Dolittle.SDK" Version="3.*" />
 
-    <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="2.0.0-alpha2*" />
-    
-    <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="2.0.0-alpha2*" />
-    <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="2.0.0-alpha2*" />   
-    
-    <PackageReference Include="Dolittle.Serialization.Json" Version="2.0.0-alpha2.*" />
-    <PackageReference Include="Dolittle.Concepts.Serialization.Json" Version="2.0.0-alpha2.*" />
+    <PackageReference Include="Dolittle.Build" Version="3.*" />   
+    <PackageReference Include="Dolittle.Build.MSBuild" Version="3.*" />   
+    <PackageReference Include="Dolittle.SDK.Build" Version="3.*" />   
 
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
-    <PackageReference Include="Autofac" Version="4.8.1" />
+    <!-- Dolittle extensions -->
+    <PackageReference Include="Dolittle.DependencyInversion.Autofac" Version="3.*" />
+    <PackageReference Include="Dolittle.ReadModels.MongoDB" Version="3.*" />
+    <PackageReference Include="Dolittle.Runtime.Events.MongoDB" Version="3.*" />   
+    <PackageReference Include="Dolittle.Runtime.Events.EventStore" Version="1.*" />
+    
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.0.0" />
-
   </ItemGroup>
 
 </Project>

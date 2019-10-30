@@ -8,7 +8,7 @@ export class AddItemToStore extends Command
 {
     constructor() {
         super();
-        this.type = 'b532d92c-66fc-47a5-a670-64eb249b04f7';
+        this.type = '96227788-4e01-41f9-a930-c3f2253bddff';
 
         this.id = '00000000-0000-0000-0000-000000000000';
         this.article = '';

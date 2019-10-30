@@ -1,38 +1,32 @@
 {
-  "modules": [
-    {
-      "module": "910b0875-f2ab-412b-8926-bd5f110508f4",
-      "name": "Carts",
-      "features": [
-        {
-          "feature": "2e7e02ac-b1a1-4226-a272-238592e6c3e0",
-          "name": "Shopping",
-          "subFeatures": []
-        }
-      ]
-    },
-    {
-      "module": "e72d78b5-bb26-4e3d-80b2-af60870c8b4f",
+  "modules": {
+    "1008d802-a4e3-43a4-8793-c7c7ecf57261": {
       "name": "Products",
-      "features": [
-        {
-          "feature": "8928d391-a757-4e85-b5ed-25b8a1ba62ae",
+      "features": {
+        "f42c5950-4ba1-4857-83c1-d98ce0528f28": {
           "name": "Store",
-          "subFeatures": []
+          "subFeatures": {}
         }
-      ]
+      }
     },
-    {
-      "module": "de638e2f-1e34-4a7a-8333-b7b24c950228",
+    "52eb2b92-46bc-4dcb-97c1-06e9f94c47ff": {
       "name": "Catalog",
-      "features": [
-        {
-          "feature": "557d24af-ae2b-4ad6-8b59-54e1a4fb9725",
+      "features": {
+        "74ce42ad-7ac3-41f8-8be8-068d96497b6e": {
           "name": "Listing",
-          "subFeatures": []
+          "subFeatures": {}
         }
-      ]
+      }
+    },
+    "dce2d88a-bacf-4bb3-ba01-349202629bf4": {
+      "name": "Carts",
+      "features": {
+        "0190f8b2-6ead-42a3-a010-531af7b58496": {
+          "name": "Shopping",
+          "subFeatures": {}
+        }
+      }
     }
-  ],
-  "features": []
+  },
+  "features": {}
 }

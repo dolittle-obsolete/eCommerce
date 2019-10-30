@@ -8,7 +8,7 @@ export class RemoveItemFromStore extends Command
 {
     constructor() {
         super();
-        this.type = 'a44d5c3b-5133-49e9-8db1-42a393008af9';
+        this.type = '9414fec1-87e5-4b63-9c04-04b5367f23f8';
 
         this.id = '00000000-0000-0000-0000-000000000000';
         this.article = '';

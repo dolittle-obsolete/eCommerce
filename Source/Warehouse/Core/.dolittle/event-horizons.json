@@ -1,13 +1,13 @@
-{
-    "eventHorizons": [
-        {
-            "application": "802598cc-7c74-5d10-8c39-fab566c951fd",
-            "boundedContext": "605b4ce5-1bed-38d5-7e8d-ccc90939e03f",
-            "url": "localhost:50052",
-            "events": [
-                { "id": "2bb07f6b-5206-4f5d-9c95-13e2f85cb52f", "generation": 1}
-
-            ]
-        }
-    ]
-}
+[
+    {
+        "application": "802598cc-7c74-5d10-8c39-fab566c951fd",
+        "boundedContext": "605b4ce5-1bed-38d5-7e8d-ccc90939e03f",
+        "url": "localhost:50052",
+        "events": [
+            {
+                "id": "2bb07f6b-5206-4f5d-9c95-13e2f85cb52f",
+                "generation": 1
+            }
+        ]
+    }
+]

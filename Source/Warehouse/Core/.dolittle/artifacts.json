@@ -1,71 +1,61 @@
 {
-  "artifacts": {
-    "2e7e02ac-b1a1-4226-a272-238592e6c3e0": {
-      "commands": [],
-      "events": [
-        {
-          "artifact": "2bb07f6b-5206-4f5d-9c95-13e2f85cb52f",
-          "generation": 1,
-          "type": "Events.Shop.Carts.Shopping.ItemAddedToCart, Events.Shop"
-        }
-      ],
-      "eventSources": [],
-      "readModels": [],
-      "queries": []
+  "f42c5950-4ba1-4857-83c1-d98ce0528f28": {
+    "commands": {
+      "96227788-4e01-41f9-a930-c3f2253bddff": {
+        "generation": 1,
+        "type": "Domain.Products.Store.AddItemToStore, Domain"
+      },
+      "9414fec1-87e5-4b63-9c04-04b5367f23f8": {
+        "generation": 1,
+        "type": "Domain.Products.Store.RemoveItemFromStore, Domain"
+      }
     },
-    "8928d391-a757-4e85-b5ed-25b8a1ba62ae": {
-      "commands": [
-        {
-          "artifact": "b532d92c-66fc-47a5-a670-64eb249b04f7",
-          "generation": 1,
-          "type": "Domain.Products.Store.AddItemToStore, Domain"
-        },
-        {
-          "artifact": "a44d5c3b-5133-49e9-8db1-42a393008af9",
-          "generation": 1,
-          "type": "Domain.Products.Store.RemoveItemFromStore, Domain"
-        }
-      ],
-      "events": [],
-      "eventSources": [
-        {
-          "artifact": "0ead09d0-2b77-4189-9643-f39b92f71f4f",
-          "generation": 1,
-          "type": "Domain.Products.Store.Store, Domain"
-        }
-      ],
-      "readModels": [
-        {
-          "artifact": "bb4dad6d-eba6-41d2-9de3-c7576b057e82",
-          "generation": 1,
-          "type": "Read.Products.Store.Product, Read"
-        }
-      ],
-      "queries": [
-        {
-          "artifact": "8aca7e41-9949-4405-beff-a2747da1aa54",
-          "generation": 1,
-          "type": "Read.Products.Store.AllProducts, Read"
-        }
-      ]
+    "events": {},
+    "eventSources": {
+      "eb431edc-02f2-4f4b-8d5a-7926dc72ec23": {
+        "generation": 1,
+        "type": "Domain.Products.Store.Store, Domain"
+      }
     },
-    "557d24af-ae2b-4ad6-8b59-54e1a4fb9725": {
-      "commands": [],
-      "events": [
-        {
-          "artifact": "39869ca3-8793-4624-ac29-990b6c531f29",
-          "generation": 1,
-          "type": "Events.Catalog.Listing.ItemAddedToListing, Events"
-        },
-        {
-          "artifact": "ec6d6a42-971f-4acb-8255-0a6e87cc4e1f",
-          "generation": 1,
-          "type": "Events.Catalog.Listing.ItemRemovedFromListing, Events"
-        }
-      ],
-      "eventSources": [],
-      "readModels": [],
-      "queries": []
+    "readModels": {
+      "b7862470-8ef5-45e7-b2ef-5ac8feb8bdd4": {
+        "generation": 1,
+        "type": "Read.Products.Store.Product, Read"
+      }
+    },
+    "queries": {
+      "3e007a82-f51b-439a-bee2-4e3acd1bea48": {
+        "generation": 1,
+        "type": "Read.Products.Store.AllProducts, Read"
+      }
     }
+  },
+  "74ce42ad-7ac3-41f8-8be8-068d96497b6e": {
+    "commands": {},
+    "events": {
+      "c073b0a9-52c9-4877-8f8c-5bbfd424d1b5": {
+        "generation": 1,
+        "type": "Events.Catalog.Listing.ItemAddedToListing, Events"
+      },
+      "b1f874d9-7cdc-4c37-8c37-c3e0a10dc816": {
+        "generation": 1,
+        "type": "Events.Catalog.Listing.ItemRemovedFromListing, Events"
+      }
+    },
+    "eventSources": {},
+    "readModels": {},
+    "queries": {}
+  },
+  "0190f8b2-6ead-42a3-a010-531af7b58496": {
+    "commands": {},
+    "events": {
+      "2bb07f6b-5206-4f5d-9c95-13e2f85cb52f": {
+        "generation": 1,
+        "type": "Events.Shop.Carts.Shopping.ItemAddedToCart, Events.Shop"
+      }
+    },
+    "eventSources": {},
+    "readModels": {},
+    "queries": {}
   }
 }
