@@ -8,7 +8,7 @@ using Dolittle.Events;
 
 namespace Events.Warehouse.Catalog.Listing
 {
-    [Artifact("39869ca3-8793-4624-ac29-990b6c531f29")]
+    [Artifact("c073b0a9-52c9-4877-8f8c-5bbfd424d1b5")]
     public class ItemAddedToListing : IEvent
     {
         /// <summary>

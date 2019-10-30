@@ -7,17 +7,16 @@ using Dolittle.Events;
 
 namespace Events.Shop.Carts.Shopping
 {
-    [Artifact("2bb07f6b-5206-4f5d-9c95-13e2f85cb52f")]
+    [Artifact("9665b62a-60dc-4594-ac4d-5b9eb60f262b")]
     public class ItemAddedToCart : IEvent
     {
         public ItemAddedToCart(string article, int quantity)
         {
             Article = article;
             Quantity = quantity;
-            
         }
 
-        public string Article { get; }
-        public int Quantity { get; }       
+        public string Article { get; }
+        public int Quantity { get; }
     }
 }
